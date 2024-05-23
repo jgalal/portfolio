@@ -1,76 +1,74 @@
-# Portfolio
+# Jalal Galal's Portfolio
 
-Welcome to my portfolio repository! This repository contains the source code and files for my personal portfolio website.
+Welcome to my personal portfolio website repository! This site showcases my education, work experience, volunteering activities, projects, skills, and interests.
 
 ## Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
+- [About Me](#about-me)
+- [Work Experience](#work-experience)
+- [Volunteering Experience](#volunteering-experience)
+- [Projects](#projects)
+- [Skills & Interests](#skills--interests)
+- [Download My Portfolio](#download-my-portfolio)
+- [How to Use](#how-to-use)
 - [Contact](#contact)
-- [License](#license)
 
-## About
+## About Me
 
-This is my personal portfolio website where I showcase my projects, skills, and experiences. The website is designed to provide a comprehensive overview of my professional background and to highlight the work I have done in various fields.
+I am a first-year Electrical Engineering student passionate about leveraging technology to make a positive impact. This portfolio highlights my journey and accomplishments.
 
-## Features
+## Work Experience
 
-- **Responsive Design:** The website is fully responsive and looks great on all devices.
-- **Interactive Elements:** Includes interactive elements to enhance user experience.
-- **Project Showcase:** Detailed information and links to my projects.
-- **Contact Form:** Easy way for visitors to get in touch with me.
+- **Luqman Medical Co**
+  - Sales Representative (May 2022 – Sept 2022)
+  - Sold medical supplies, underwent product training, and built customer relationships.
 
-## Installation
+- **Unimed Pharmaceuticals**
+  - Assistant Operator (Nov 2020 – Jan 2021)
+  - Assisted in managing the compression machine line and developed an understanding of operations.
 
-To run this project locally, follow these steps:
+## Volunteering Experience
 
-1. **Clone the repository:**
+- **Local Vaccination Clinic**
+  - Organized lines and provided support during the COVID-19 vaccination process.
+  
+- **Business Model & Presentation Lectures**
+  - Led workshops on entrepreneurial skills and communication for Hult Prize competitors.
 
-   ```bash
-   git clone https://github.com/jgalal/portfolio.git
-   ```
+## Projects
 
-2. **Navigate to the project directory:**
+- **Low Water Level Alarm for Pet Dish**
+  - Engineered a versatile, low-cost alarm to ensure consistent water availability for pets.
 
-   ```bash
+- **Solar Radiation Reduction System**
+  - Developed an automated solution to reduce solar radiation in Robarts Common, enhancing comfort.
+
+- **Breast Cancer Research Representation**
+  - Represented a research project focusing on early detection of breast cancer using MATLAB.
+
+## Skills & Interests
+
+### Skills
+
+- Effective communication
+- Adaptability
+- Problem-solving
+- Attention to detail
+- Teamwork & Collaboration
+
+### Interests
+
+- Soccer: Starting player at the UMST soccer team
+- Bodybuilding: Passionate about weight training and fitness
+- Swimming: Enjoying the tranquility of the water
+
+## Download My Portfolio
+
+You can download my detailed portfolio [here](https://github.com/jalaleng/portfolio/blob/main/Jalal's%20Resume-2.pdf).
+
+## How to Use
+
+1. **Clone the Repository:**
+   ```sh
+   git clone https://github.com/jalaleng/portfolio.git
    cd portfolio
-   ```
-
-3. **Open `index.html` in your browser:**
-
-   You can simply double-click on the `index.html` file to open it in your default web browser, or you can use a local server like `http-server`.
-
-   ```bash
-   npx http-server
-   ```
-
-4. **View the website:**
-
-   Open your web browser and go to `http://localhost:8080` (or the port number provided by your local server).
-
-## Usage
-
-Feel free to explore the website to learn more about my skills and projects. You can navigate through different sections to find information about my professional background, the projects I have worked on, and how to contact me.
-
-## Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-
-## Contributing
-
-I welcome contributions to improve this project! If you have suggestions for improvements, feel free to submit a pull request or open an issue.
-
-## Contact
-
-You can reach me at:
-
-- **Email:** [j.galal@mail.utoronto.ca](mailto:j.galal@mail.utoronto.ca)
-- **LinkedIn:** [...](https://www.linkedin.com/in/yourprofile)
-- **Twitter:** [...](https://twitter.com/yourtwitterhandle)
-
