@@ -1,7 +1,3 @@
-Sure! Here is the README text formatted for easy copying and pasting:
-
----
-
 # Portfolio
 
 Welcome to my portfolio repository! This repository contains the source code and files for my personal portfolio website.
@@ -65,7 +61,6 @@ Feel free to explore the website to learn more about my skills and projects. You
 - HTML
 - CSS
 - JavaScript
-- [Any frameworks or libraries you used, e.g., Bootstrap, React]
 
 ## Contributing
 
@@ -76,13 +71,6 @@ I welcome contributions to improve this project! If you have suggestions for imp
 You can reach me at:
 
 - **Email:** [j.galal@mail.utoronto.ca](mailto:j.galal@mail.utoronto.ca)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- **Twitter:** [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
+- **LinkedIn:** [...](https://www.linkedin.com/in/yourprofile)
+- **Twitter:** [...](https://twitter.com/yourtwitterhandle)
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Copy the above text and paste it into your README file on GitHub. Let me know if you need any further adjustments!
