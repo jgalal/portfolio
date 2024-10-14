@@ -13,61 +13,63 @@
     </header>
 
     <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#activities">Activities</a>
-        <a href="#skills">Skills</a>
+        <a href="#about-me" onclick="showSection('about-me')">About Me</a>
+        <a href="#experience" onclick="showSection('experience')">Experience</a>
+        <a href="#education" onclick="showSection('education')">Education</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#skills" onclick="showSection('skills')">Skills</a>
+        <a href="#affiliations" onclick="showSection('affiliations')">Affiliations</a>
     </nav>
 
     <main>
-        <section id="about-me">
+        <section id="about-me" class="active">
             <h2>About Me</h2>
             <p>Electrical & Computer Engineering Student at UofT with a passion for Biotechnology.</p>
+            <hr>
         </section>
-        <hr>
+
         <section id="experience">
             <h2>Experience</h2>
             <h3>Makerspace Volunteer</h3>
-            <p><em>uOttawa Richard L’Abbé Makerspace, Aug 2024 - Sep 2024</em></p>
-            <ul>
-                <li>Managed and maintained 3D printers and laser cutters.</li>
-                <li>Assisted in teaching and organizing workshops.</li>
-            </ul>
+            <p>
+                uOttawa Richard L’Abbé Makerspace, Aug 2024 - Sep 2024 <br>
+                Managed and maintained 3D printers and laser cutters. Assisted in teaching and organizing workshops.
+            </p>
+            <hr>
         </section>
-        <hr>
+
         <section id="education">
             <h2>Education</h2>
             <h3>University of Toronto</h3>
-            <p>Bachelor of Engineering in Electrical and Computer Engineering</p>
-            <p><em>Sep 2023 - Dec 2027</em></p>
+            <p>Bachelor of Engineering in Electrical and Computer Engineering <br> Sep 2023 - Dec 2027</p>
+            <hr>
         </section>
-        <hr>
+
         <section id="projects">
             <h2>Projects</h2>
+            <h3>Competition Prize Design & Production</h3>
+            <p>
+                Designed and produced 3D-printed and laser-cut prizes for competitions. Managed design and fabrication processes.<br>
+                <em>Skills: Autodesk Fusion 360, Cura</em>
+            </p>
             <h3>Smart Pet Hydration System – Engineering & Market Launch</h3>
-            <p><em>Apr 2024 - Jul 2024</em></p>
-            <ul>
-                <li>Collaborated on a client project to refine and launch the system.</li>
-                <li>Focused on circuit design, software testing, and 3D prototyping.</li>
-            </ul>
+            <p>
+                Focused on circuit design and software testing for market readiness. Utilized 3D printing for advanced prototyping.<br>
+                <em>Skills: Arduino IDE, C++, 3D Printing</em>
+            </p>
             <h3>Line Tracking Car – UofT 2024 Line Tracking Competition</h3>
-            <p><em>Jun 2024 - Jun 2024</em></p>
-            <ul>
-                <li>Designed and developed a line-tracking car with a 3D-printed chassis.</li>
-                <li>Won first place for the fastest completion.</li>
-            </ul>
+            <p>
+                Built a line-tracking car with Bluetooth control. Secured first place for fastest completion.<br>
+                <em>Skills: Arduino IDE, C++, Fusion 360</em>
+            </p>
+            <h3>Solar Radiation Reduction System – Robarts Library Proposal</h3>
+            <p>
+                Developed a proposal for UofT's Robarts Commons to reduce solar radiation while maintaining natural light.<br>
+                <em>Skills: Project Design, Technical Analysis</em>
+            </p>
+            <hr>
         </section>
-        <hr>
-        <section id="activities">
-            <h2>Activities</h2>
-            <h3>CUBE - Junior Executive</h3>
-            <p><em>Oct 2024 - Present</em></p>
-            <h3>UTASR - Member</h3>
-            <p><em>Sep 2024 - Present</em></p>
-        </section>
-        <hr>
+
         <section id="skills">
             <h2>Skills</h2>
             <ul>
@@ -76,11 +78,28 @@
                 <li>3D Printing</li>
                 <li>Fusion 360</li>
             </ul>
+            <hr>
+        </section>
+
+        <section id="affiliations">
+            <h2>Affiliations</h2>
+            <h3>CUBE Junior Executive</h3>
+            <p>
+                Club for Biomedical Engineering, University of Toronto <br>
+                Role: Junior Executive, October 2024 - Present
+            </p>
+            <h3>UTASR Member</h3>
+            <p>
+                University of Toronto Autonomous Scale Racing, September 2024 - Present
+            </p>
+            <hr>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Jalal Galal. All rights reserved.</p>
+        <p>&copy; 2024 Jalal Galal. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
