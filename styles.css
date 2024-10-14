@@ -1,58 +1,93 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
 }
 
+/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
     text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+    color: white;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #444;
-}
-
-nav a {
-    color: #fff;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-nav a:hover {
     background-color: #555;
 }
 
+nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/* Main Content Styles */
 main {
-    padding: 2rem;
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
-h1, h2, h3 {
+section h2 {
     color: #333;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
+h3 {
+    font-size: 1.2em;
+    color: #444;
+    margin: 10px 0 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
+    padding: 15px 0;
+    background-color: #444;
+    color: white;
+    font-size: 0.9em;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
