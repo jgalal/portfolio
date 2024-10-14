@@ -1,93 +1,107 @@
+/* styles.css */
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #f8f9fa;
 }
 
-/* Header Styles */
+/* Header */
 header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
-    background-color: #444;
-    color: white;
 }
 
 header h1 {
+    font-size: 2em;
     margin: 0;
-    font-size: 2.5em;
 }
 
-header p {
-    margin: 5px 0 0;
-    font-size: 1.1em;
-    font-weight: 300;
-}
-
-/* Navigation Styles */
+/* Navigation */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #555;
+    background-color: #444;
+    overflow: hidden;
 }
 
 nav a {
-    color: white;
-    padding: 15px;
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1em;
 }
 
 nav a:hover {
-    background-color: #666;
+    background-color: #555;
+    color: #fff;
 }
 
-/* Main Content Styles */
+/* Main Content */
 main {
-    max-width: 800px;
-    margin: 0 auto;
     padding: 20px;
 }
 
-section h2 {
-    color: #333;
-    font-size: 1.8em;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+section {
+    margin-bottom: 30px;
 }
 
+/* Section Titles */
+h2 {
+    font-size: 1.8em;
+    color: #444;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Experience and Projects */
+h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 0;
+}
+
+p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Horizontal Divider */
 hr {
     border: none;
     border-top: 1px solid #ccc;
     margin: 20px 0;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-h3 {
-    font-size: 1.2em;
-    color: #444;
-    margin: 10px 0 5px;
-}
-
-p {
-    line-height: 1.6;
-}
-
-/* Footer Styles */
+/* Footer */
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
-    background-color: #444;
-    color: white;
+    padding: 10px 0;
     font-size: 0.9em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
 }
