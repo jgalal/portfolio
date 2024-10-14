@@ -1,114 +1,114 @@
-/* Reset some basic styles */
-body, h1, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
 header {
     width: 100%;
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
+    font-weight: 700;
 }
 
 nav {
     width: 100%;
-    background-color: #444;
-    overflow: hidden;
+    background-color: #495057;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 14px 20px;
+    color: #dee2e6;
+    padding: 15px 20px;
     text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #6c757d;
+    color: #fff;
 }
 
 main {
     max-width: 800px;
     width: 100%;
-    background: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    color: #495057;
 }
 
 h2 {
-    margin-bottom: 10px;
     font-size: 1.8em;
-    color: #333;
+    color: #007bff;
+    margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.3em;
-    color: #333;
-    margin: 20px 0 5px;
+    font-size: 1.4em;
+    color: #495057;
+    margin: 20px 0 10px;
 }
 
-p {
-    margin-bottom: 10px;
+p, ul {
+    font-size: 1em;
+    color: #495057;
+    margin-bottom: 20px;
 }
 
 ul {
-    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dee2e6;
+    margin: 30px 0;
 }
 
 footer {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
+    padding: 15px 0;
+    background-color: #343a40;
+    color: #dee2e6;
     position: fixed;
     bottom: 0;
+    font-size: 0.9em;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 20px 0;
-}
-
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 600px) {
     main {
-        padding: 10px;
-    }
-
-    nav a {
-        padding: 10px 15px;
+        padding: 20px;
     }
 
     h2, h3 {
         text-align: center;
     }
-
-    p {
-        text-align: justify;
-    }
 }
+
