@@ -3,122 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jalal Galal's Portfolio</title>
+    <title>Jalal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
 </head>
 <body>
     <header>
-        <h1>Jalal Galal's Portfolio</h1>
+        <h1>Jalal Galal</h1>
+        <p>ECE Student & Aspiring Engineer</p>
     </header>
     <nav>
-        <a href="#about-me" onclick="showSection('about-me')">About Me</a>
-        <a href="#work-experience" onclick="showSection('work-experience')">Work Experience</a>
-        <a href="#volunteering" onclick="showSection('volunteering')">Volunteering</a>
-        <a href="#projects" onclick="showSection('projects')">Projects</a>
-        <a href="#skills-interests" onclick="showSection('skills-interests')">Skills & Interests</a>
-        <a href="#download" onclick="showSection('download')">Download</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
     <main>
-        <section id="about-me" class="active">
+        <section id="about">
             <h2>About Me</h2>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">About Me</div>
-                    <div class="card-back">Jalal Galal, a third-year Biomedical Engineer passionate about leveraging technology to make a positive impact. Excited to explore learning paths and contribute to community and global improvements.</div>
-                </div>
-            </div>
+            <p>Hello! I'm Jalal, an Electrical and Computer Engineering student with a passion for electronics and robotics. I enjoy hands-on projects and exploring new technologies.</p>
         </section>
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Luqman Medical Co</div>
-                    <div class="card-back">Sales Representative, May 2022 – Sept 2022. Sold medical supplies, underwent product training, and built customer relationships.</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Unimed Pharmaceuticals</div>
-                    <div class="card-back">Assistant Operator, Nov 2020 – Jan 2021. Assisted in managing the compression machine line, developed understanding of operations.</div>
-                </div>
-            </div>
-        </section>
-        <section id="volunteering">
-            <h2>Volunteering Experience</h2>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Local Vaccination Clinic</div>
-                    <div class="card-back">Organized lines and provided support during COVID-19 vaccination process, ensuring smooth operations.</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Business Model & Presentation Lectures</div>
-                    <div class="card-back">Led a workshop on entrepreneurial skills and communication for Hult Prize competitors.</div>
-                </div>
-            </div>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>Intern, uOttawa Makerspace</strong> - Assisted with various projects and helped students with their designs.</li>
+                <li><strong>Junior Executive, BMEC</strong> - Involved in organizing events and workshops for the engineering community.</li>
+            </ul>
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Low Water Level Alarm</div>
-                    <div class="card-back">Engineered a low-cost alarm for pet dishes. Design in commercialization process.</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Solar Radiation Reduction System</div>
-                    <div class="card-back">Developed an automated solution to reduce solar radiation in Robarts Common, enhancing comfort.</div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Breast Cancer Research</div>
-                    <div class="card-back">Represented a research project on early breast cancer detection using MATLAB at UMST Faculty of Engineering.</div>
-                </div>
-            </div>
+            <ul>
+                <li><strong>Desk Robot</strong> - Built a desk robot to help with scheduling and notifications.</li>
+                <li><strong>Mail Detection System</strong> - Created a device that notifies when mail is delivered, using Arduino.</li>
+            </ul>
         </section>
-        <section id="skills-interests">
-            <h2>Skills & Interests</h2>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Skills</div>
-                    <div class="card-back">
-                        <ul>
-                            <li>Effective communication</li>
-                            <li>Adaptability</li>
-                            <li>Problem-solving</li>
-                            <li>Attention to detail</li>
-                            <li>Teamwork & Collaboration</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">Interests</div>
-                    <div class="card-back">
-                        <ul>
-                            <li>Soccer: Starting player at the UMST soccer team</li>
-                            <li>Bodybuilding: Passionate about weight training and fitness</li>
-                            <li>Swimming: Enjoying the tranquility of the water</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="download">
-            <h2>Download My Portfolio</h2>
-            <p>You can download my detailed portfolio <a href="https://github.com/jalaleng/portfolio/blob/main/Jalal's%20Resume-2.pdf" download>here</a>.</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:jgalal@mail.utoronto.ca">jgalal@mail.utoronto.ca</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jalalgalal/" target="_blank">linkedin.com/in/jalalgalal</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Jalal Galal. All rights reserved.</p>
+        <p>© 2024 Jalal. All rights reserved.</p>
     </footer>
-    <script src="scripts.js"></script>
-    <script src="//code.tidio.co/lydvcyjputpqhn2ag41e3yd8hwqa6nmx.js" async></script>
 </body>
 </html>
