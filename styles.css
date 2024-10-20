@@ -9,6 +9,7 @@ body {
 nav ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     padding: 20px;
     background-color: #f5f5dc;
@@ -24,10 +25,15 @@ nav ul li a {
     text-decoration: none;
 }
 
+.logo {
+    width: 40px; /* Adjust width to your preference */
+    margin-right: 20px; /* Spacing between logo and menu items */
+    vertical-align: middle; /* Aligns logo with the menu */
+}
+
 .block {
     padding: 100px 20px;
     text-align: center;
-    min-height: 100vh;
 }
 
 h1 {
@@ -55,11 +61,6 @@ button {
 
 button:hover {
     background-color: #333;
-}
-
-.left-aligned {
-    text-align: left;
-    margin-left: 20px;
 }
 
 .social-icons img {
