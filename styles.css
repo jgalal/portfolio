@@ -1,86 +1,108 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
+    font-family: 'Playfair Display', serif;
+    background-color: #FAF7F2; /* Off-white creamy color */
     margin: 0;
-}
-
-.navbar {
-    background-color: #2d2d2d;
-    padding: 15px 20px;
-}
-
-.navbar .container {
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #1C1C1C;
+    padding: 1rem;
+  }
+  
+  .nav-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar .logo h1 {
-    font-family: 'Playfair Display', serif;
-    color: white;
-}
-
-.navbar .nav-links {
+    justify-content: flex-end;
     list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar .nav-links li a {
-    color: #ddd;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #DADADA;
     text-decoration: none;
-}
-
-.hero-section {
+    font-size: 18px;
+  }
+  
+  .hero {
     text-align: center;
-    padding: 120px 0;
-    background-color: #f1efe8;
-}
-
-.hero-section .title {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-}
-
-.hero-section .subtitle {
-    font-size: 20px;
-    color: #555;
-}
-
-.hero-section .reach-out-btn {
-    margin-top: 20px;
-    padding: 10px 30px;
-    border: none;
+    padding: 100px 20px;
+    background-color: #FAF7F2;
+    transition: background-color 0.3s ease-in;
+  }
+  
+  .hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .button {
+    display: inline-block;
     background-color: #000;
     color: #fff;
-    cursor: pointer;
-}
-
-.connect-section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.connect-section .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-}
-
-.connect-section .contact-info {
-    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
     font-size: 18px;
-    color: #555;
-}
-
-.connect-section .resume-link {
-    display: block;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  .contact-section {
+    padding: 80px 20px;
+    background-color: #FAF7F2;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .contact-section h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .contact-info {
+    font-size: 22px;
+    font-weight: 500;
     margin: 20px 0;
-    color: #333;
-    text-decoration: underline;
-}
-
-.social-links a img {
-    width: 32px;
-    margin: 0 10px;
-}
+  }
+  
+  .contact-info a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .resume-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .social-icons {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  .social-icons a {
+    margin-right: 20px;
+  }
+  
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+  
