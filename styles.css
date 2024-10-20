@@ -1,69 +1,89 @@
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'Your Font Here', sans-serif;
-    background-color: #f5f3e6; /* Off-white background */
-}
-
-header nav {
-    background-color: #f5f3e6; /* Make this match your desired color */
-    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f2e9;
+    color: #333;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
     justify-content: flex-end;
+    padding: 1rem;
+    list-style-type: none;
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: black; /* Adjust as needed */
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 80px;
-}
-
-h2 {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.reach-out {
-    display: block;
-    margin: 0 auto;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#contact {
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    color: #333;
 }
 
 .block {
-    margin: 50px 0;
+    text-align: center;
+    padding: 5rem 0;
 }
 
-.social-icons a img {
-    width: 24px; /* Adjust as needed */
-    margin: 0 10px;
+#home {
+    padding-top: 4rem;
 }
 
-/* JavaScript transition effects */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+.resume-link, .social-icons a {
+    display: inline-block;
+    margin: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade transition */
+.block {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.block.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
