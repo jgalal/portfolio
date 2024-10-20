@@ -9,8 +9,8 @@
 </head>
 <body>
     <nav>
-        <img id="logo" src="logo.png" alt="Logo">
         <ul>
+            <li class="logo"><img src="logo.png" alt="Logo"></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#journey">My Journey</a></li>
@@ -42,22 +42,19 @@
     </section>
 
     <script>
+        // AOS initialization
         AOS.init({
             duration: 1000,
             easing: 'ease-in-out',
         });
 
-        // Add event listener for scroll to trigger spin
-        window.addEventListener('scroll', function () {
-            const contactSection = document.getElementById('contact');
-            const logo = document.getElementById('logo');
-            
-            // Check if the contact section is in view
-            const rect = contactSection.getBoundingClientRect();
-            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                logo.classList.add('spin-logo');
+        // Logo rotation on scroll
+        window.addEventListener("scroll", function() {
+            const logo = document.querySelector('.logo img');
+            if (window.scrollY > 0) {
+                logo.style.transform = "rotate(" + window.scrollY / 2 + "deg)";
             } else {
-                logo.classList.remove('spin-logo');
+                logo.style.transform = "rotate(0deg)";
             }
         });
     </script>
