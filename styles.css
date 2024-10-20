@@ -47,8 +47,7 @@ nav {
 
 /* Slide Effect */
 .section-container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .slide {
@@ -57,15 +56,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
     transition: all 0.8s ease-in-out;
-    opacity: 0.3;
-    transform: translateY(30%);
-}
-
-.slide:first-child {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 h1 {
