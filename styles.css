@@ -1,21 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #faf9f7;
+    background-color: #f7f7f7;
     margin: 0;
-    padding: 0;
 }
 
 .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #2d2d2d;
+    padding: 15px 20px;
 }
 
 .navbar .container {
@@ -24,70 +16,71 @@ body {
     align-items: center;
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+.navbar .logo h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
 }
 
-.navbar-links {
+.navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 20px;
 }
 
-.navbar-links li a {
+.navbar .nav-links li a {
+    color: #ddd;
     text-decoration: none;
-    color: #fff;
-    font-weight: 500;
 }
 
 .hero-section {
     text-align: center;
-    padding: 5rem 0;
-    background-color: #fff;
+    padding: 120px 0;
+    background-color: #f1efe8;
 }
 
-.hero-title {
-    font-size: 2.5rem;
-    margin: 0;
-    font-weight: 700;
+.hero-section .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
 }
 
-.hero-subtitle {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+.hero-section .subtitle {
+    font-size: 20px;
+    color: #555;
 }
 
-.hero-button {
-    padding: 0.7rem 2rem;
-    background-color: #333;
+.hero-section .reach-out-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    background-color: #000;
     color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 1rem;
-    display: inline-block;
+    cursor: pointer;
 }
 
-.contact-section {
+.connect-section {
+    padding: 60px 0;
     text-align: center;
-    padding: 2rem 0;
-    background-color: #fff;
 }
 
-.contact-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.connect-section .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
 }
 
-.contact-section p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
+.connect-section .contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
 }
 
-.social-links {
-    margin-top: 1rem;
+.connect-section .resume-link {
+    display: block;
+    margin: 20px 0;
+    color: #333;
+    text-decoration: underline;
 }
 
-.social-links a {
-    margin: 0 0.5rem;
+.social-links a img {
+    width: 32px;
+    margin: 0 10px;
 }
