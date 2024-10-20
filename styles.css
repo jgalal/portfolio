@@ -71,4 +71,64 @@ nav {
 h1 {
     font-size: 54px;
     font-weight: 700;
-    margin-bottom:
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contact-button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+/* Contact Section */
+#contact {
+    align-items: left;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* General Link Styles */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
