@@ -9,45 +9,39 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><img src="logo.png" alt="Logo" class="logo"></li>
-            <div class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#journey">My Journey</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </div>
+        <ul class="nav-left">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#journey">My Journey</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
         </ul>
+        <img src="logo.png" alt="Logo" class="logo">
     </nav>
 
-    <section id="home" class="block" data-aos="fade-up">
-        <h1>Jalal Galal</h1>
-        <p>Electrical & Computer Engineering Student at UofT<br>Passionate about Biotechnology</p>
-        <button onclick="window.location.href='mailto:j.galal@mail.utoronto.ca';">Reach Out</button>
-    </section>
+    <div class="section-container">
+        <section id="home" class="slide">
+            <h1>Jalal Galal</h1>
+            <p>Electrical & Computer Engineering Student at UofT<br>Passionate about Biotechnology</p>
+            <button onclick="window.location.href='mailto:j.galal@mail.utoronto.ca';" class="contact-button">Reach Out</button>
+        </section>
 
-    <section id="about" class="block" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio. I am an Electrical & Computer Engineering student with a keen interest in biomedical innovations. My focus is on combining technology and healthcare to make diagnostics more accessible and efficient. Let's connect and explore possibilities together!</p>
-    </section>
-
-    <section id="contact" class="block" data-aos="fade-up">
-        <div class="content">
-            <h2>Connect with Me</h2>
-            <p>
-                Jalal Galal<br>
-                <a href="mailto:j.galal@mail.utoronto.ca">j.galal@mail.utoronto.ca</a><br>
-                (437) 662 8020<br>
-                <a href="https://www.jalal.ca">www.jalal.ca</a><br>
-                <a href="resume.pdf" class="resume-link">Find my resume here</a>
-            </p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/_jalalg"><img src="instagram.png" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/jalal-galal-020123296"><img src="linkedin.png" alt="LinkedIn"></a>
+        <section id="contact" class="slide">
+            <div class="content">
+                <h2>Connect with Me</h2>
+                <p>
+                    Jalal Galal<br>
+                    <a href="mailto:j.galal@mail.utoronto.ca">j.galal@mail.utoronto.ca</a><br>
+                    (437) 662 8020<br>
+                    <a href="https://www.jalal.ca">www.jalal.ca</a><br>
+                    <a href="resume.pdf" class="resume-link">Find my resume here</a>
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_jalalg"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/jalal-galal-020123296"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script>
         AOS.init({
@@ -55,13 +49,16 @@
             easing: 'ease-in-out',
         });
 
+        // Slide effect handling
         window.addEventListener('scroll', () => {
-            const logo = document.querySelector('.logo');
-            if (window.scrollY > 50) {
-                logo.classList.add('spin');
-            } else {
-                logo.classList.remove('spin');
-            }
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, index) => {
+                const slideHeight = window.innerHeight;
+                if (window.scrollY > index * slideHeight - slideHeight / 2) {
+                    slide.style.opacity = 1;
+                    slide.style.transform = 'translateY(0)';
+                }
+            });
         });
     </script>
 </body>
