@@ -9,8 +9,8 @@
 </head>
 <body>
     <nav>
+        <img id="logo" src="logo.png" alt="Logo">
         <ul>
-            <li><a href="#home"><img src="logo.png" alt="Logo" class="logo"></a></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#journey">My Journey</a></li>
@@ -18,7 +18,7 @@
         </ul>
     </nav>
 
-    <section id="home" class="block full-screen" data-aos="fade-up">
+    <section id="home" class="block" data-aos="fade-up">
         <h1>Jalal Galal</h1>
         <p>Electrical & Computer Engineering Student at UofT<br>Passionate about Biotechnology</p>
         <button onclick="window.location.href='mailto:j.galal@mail.utoronto.ca';">Reach Out</button>
@@ -27,7 +27,7 @@
     <section id="contact" class="block" data-aos="fade-up">
         <div class="content">
             <h2>Connect with Me</h2>
-            <p class="contact-info">
+            <p>
                 Jalal Galal<br>
                 <a href="mailto:j.galal@mail.utoronto.ca">j.galal@mail.utoronto.ca</a><br>
                 (437) 662 8020<br>
@@ -45,6 +45,20 @@
         AOS.init({
             duration: 1000,
             easing: 'ease-in-out',
+        });
+
+        // Add event listener for scroll to trigger spin
+        window.addEventListener('scroll', function () {
+            const contactSection = document.getElementById('contact');
+            const logo = document.getElementById('logo');
+            
+            // Check if the contact section is in view
+            const rect = contactSection.getBoundingClientRect();
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                logo.classList.add('spin-logo');
+            } else {
+                logo.classList.remove('spin-logo');
+            }
         });
     </script>
 </body>
