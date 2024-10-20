@@ -1,25 +1,26 @@
 /* General Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('background.png') no-repeat center center fixed; 
-    background-size: cover; 
+    background: url('background.png') center center/cover no-repeat fixed; 
     color: #333;
     line-height: 1.6;
 }
 
 /* Navigation Styling */
 .navbar {
-    background-color: #000;
+    background-color: #333;
+    padding: 15px;
 }
 
 .navbar .navbar-nav .nav-link {
     color: #fff;
-    margin: 0 15px; /* Add space between items */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #ddd;
+    color: #ccc;
 }
 
 .navbar-brand {
@@ -31,20 +32,27 @@ body {
 
 /* Section Styling */
 .home-section, .about-section, .portfolio-section, .moments-section {
-    padding: 100px 20px; /* Extra padding for spacing */
+    padding: 100px 20px;
     text-align: center;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    color: #333;
+    color: #222;
+    margin-bottom: 20px;
     transition: opacity 1s ease;
 }
 
-p {
-    font-size: 18px;
+h3 {
+    font-size: 32px;
     color: #444;
+    margin-top: 20px;
+}
+
+p, a {
+    font-size: 18px;
+    color: #555;
 }
 
 /* Smooth Transitions */
@@ -68,18 +76,46 @@ h1, h2, p, .nav-link {
 .timeline {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
 }
 
 .timeline-item {
     margin-bottom: 40px;
+    border-left: 3px solid #333;
+    padding-left: 20px;
+    position: relative;
 }
 
-.timeline-item h3 {
-    font-size: 28px;
-    color: #555;
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
 }
 
-.timeline-item p {
-    font-size: 18px;
-    color: #666;
+/* Portfolio Section */
+.portfolio-section {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.portfolio-section h2, .about-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
 }
