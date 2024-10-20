@@ -22,16 +22,12 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .block {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 100px 20px;
     text-align: center;
-    padding: 20px;
+    min-height: 100vh;
 }
 
 h1 {
@@ -55,12 +51,15 @@ button {
     background-color: black;
     color: white;
     border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #333;
+}
+
+.left-aligned {
+    text-align: left;
+    margin-left: 20px;
 }
 
 .social-icons img {
