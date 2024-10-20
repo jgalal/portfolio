@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5dc;
@@ -10,10 +11,18 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #f5f5dc;
-    padding: 20px;
+    background-color: #fff;
+    padding: 15px 30px;
     border-bottom: 1px solid black;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 nav ul {
@@ -26,13 +35,19 @@ nav ul {
 }
 
 nav ul li a {
-    color: black;
+    color: #333;
     text-decoration: none;
-    margin: 0 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
 }
 
 .logo {
-    width: 40px;
+    width: 50px;
     transition: transform 0.5s;
 }
 
@@ -40,9 +55,10 @@ nav ul li a {
     transform: rotate(360deg);
 }
 
+/* Block Sections */
 .block {
     min-height: 100vh;
-    padding: 100px 20px;
+    padding: 120px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,50 +66,51 @@ nav ul li a {
 }
 
 h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    background-color: black;
+    background-color: #333;
     color: white;
     border: none;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #555;
+}
+
+/* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .social-icons img {
     width: 40px;
-    margin: 10px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#contact {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
