@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Jalal Galal | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
     <nav>
@@ -15,15 +16,15 @@
             <li><a href="#portfolio">Portfolio</a></li>
         </ul>
     </nav>
-    <section id="home" class="block">
-        <div class="content">
-            <h1 class="big-title">Jalal Galal</h1>
-            <p class="subtitle">Electrical & Computer Engineering Student at UofT<br>Passionate about Biotechnology</p>
-            <a href="#contact" class="btn">Reach Out</a>
-        </div>
+
+    <section id="home" class="block" data-aos="fade-up">
+        <h1>Jalal Galal</h1>
+        <p>Electrical & Computer Engineering Student at UofT<br>Passionate about Biotechnology</p>
+        <button onclick="window.location.href='mailto:j.galal@mail.utoronto.ca';">Reach Out</button>
     </section>
-    <section id="contact" class="block">
-        <div class="content left-align">
+
+    <section id="contact" class="block" data-aos="fade-up">
+        <div class="content">
             <h2>Connect with Me</h2>
             <p>
                 Jalal Galal<br>
@@ -38,6 +39,12 @@
             </div>
         </div>
     </section>
-    <script src="scripts.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+    </script>
 </body>
 </html>
