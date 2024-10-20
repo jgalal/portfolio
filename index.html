@@ -2,112 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jalal Galal</title>
-    <meta name="description" content="Jalal Galal - Electrical & Computer Engineering Student at the University of Toronto with a passion for Biotechnology. Learn about my projects, experience, and skills.">
-    <meta name="keywords" content="Jalal Galal, Electrical Engineering, Computer Engineering, Biotechnology, University of Toronto, Projects, Skills, Makerspace, Arduino, 3D Printing, Fusion 360">
-    <meta name="author" content="Jalal Galal">
-    <meta property="og:title" content="Jalal Galal - ECE Student at UofT">
-    <meta property="og:description" content="Explore Jalal Galal's projects, skills, and experience in Electrical and Computer Engineering.">
-    <meta property="og:image" content="favicon.ico">
-    <meta property="og:url" content="https://www.jalal.ca">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Jalal Galal's Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Jalal Galal</h1>
-    </header>
-
-    <nav>
-        <a href="#about-me" onclick="showSection('about-me')">About Me</a>
-        <a href="#experience" onclick="showSection('experience')">Experience</a>
-        <a href="#education" onclick="showSection('education')">Education</a>
-        <a href="#projects" onclick="showSection('projects')">Projects</a>
-        <a href="#skills" onclick="showSection('skills')">Skills</a>
-        <a href="#affiliations" onclick="showSection('affiliations')">Affiliations</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Jalal Galal</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#moments">Moments That Shaped Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section id="about-me" class="active">
+    <!-- Home Section -->
+    <section id="home" class="home-section text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Journey</h1>
+            <p class="lead">"The journey of a thousand miles begins with a single step."</p>
+            <p class="lead">"Life is not measured by the number of breaths we take, but by the moments that take our breath away."</p>
+            <hr>
+            <h2>Contact Me</h2>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: <a href="#">LinkedIn Profile Link</a></p>
+        </div>
+    </section>
+
+    <!-- Moments That Shaped Me Section -->
+    <section id="moments" class="moments-section">
+        <div class="container">
+            <h2 class="text-center">Moments That Shaped Me</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2021: Enrolled in BME at UMST, Sudan</h3>
+                    <p>[Photo Placeholder]</p>
+                    <p>Text about your experience in the BME program at UMST...</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2023: Surviving the War</h3>
+                    <p>[Photo Placeholder]</p>
+                    <p>Text about your experiences during the war and how you persevered...</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2024: Transition to UofT, Canada</h3>
+                    <p>[Photo Placeholder]</p>
+                    <p>Text about moving to Canada and starting at UofT...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container text-center">
             <h2>About Me</h2>
-            <p>Electrical & Computer Engineering Student at UofT with a passion for Biotechnology.</p>
-            <hr>
-        </section>
+            <p>[Professional Headshot Placeholder]</p>
+            <p>Text about your background, passions, and career aspirations...</p>
+        </div>
+    </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <h3>Makerspace Volunteer</h3>
-            <p>
-                uOttawa Richard L’Abbé Makerspace, Aug 2024 - Sep 2024 <br>
-                Managed and maintained 3D printers and laser cutters. Assisted in teaching and organizing workshops.
-            </p>
-            <hr>
-        </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="text-center">Portfolio & Résumé</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li>Project 1: Brief description [Link or Visual]</li>
+                        <li>Project 2: Brief description [Link or Visual]</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Résumé</h3>
+                    <p>[Resume PDF Embed or Download Link]</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <h3>University of Toronto</h3>
-            <p>Bachelor of Engineering in Electrical and Computer Engineering <br> Sep 2023 - Dec 2027</p>
-            <hr>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <h3>Competition Prize Design & Production</h3>
-            <p>
-                Designed and produced 3D-printed and laser-cut prizes for competitions. Managed design and fabrication processes.<br>
-                <em>Skills: Autodesk Fusion 360, Cura</em>
-            </p>
-            <h3>Smart Pet Hydration System – Engineering & Market Launch</h3>
-            <p>
-                Focused on circuit design and software testing for market readiness. Utilized 3D printing for advanced prototyping.<br>
-                <em>Skills: Arduino IDE, C++, 3D Printing</em>
-            </p>
-            <h3>Line Tracking Car – UofT 2024 Line Tracking Competition</h3>
-            <p>
-                Built a line-tracking car with Bluetooth control. Secured first place for fastest completion.<br>
-                <em>Skills: Arduino IDE, C++, Fusion 360</em>
-            </p>
-            <h3>Solar Radiation Reduction System – Robarts Library Proposal</h3>
-            <p>
-                Developed a proposal for UofT's Robarts Commons to reduce solar radiation while maintaining natural light.<br>
-                <em>Skills: Project Design, Technical Analysis</em>
-            </p>
-            <hr>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Arduino IDE</li>
-                <li>C++</li>
-                <li>3D Printing</li>
-                <li>Fusion 360</li>
-            </ul>
-            <hr>
-        </section>
-
-        <section id="affiliations">
-            <h2>Affiliations</h2>
-            <h3>CUBE Junior Executive</h3>
-            <p>
-                Club for Biomedical Engineering, University of Toronto <br>
-                Role: Junior Executive, October 2024 - Present
-            </p>
-            <h3>UTASR Member</h3>
-            <p>
-                University of Toronto Autonomous Scale Racing, September 2024 - Present
-            </p>
-            <hr>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Jalal Galal. All rights reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
