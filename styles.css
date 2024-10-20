@@ -1,89 +1,72 @@
 body {
-    margin: 0;
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f7f2e9;
-    color: #333;
 }
 
-header nav ul {
+nav {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
     display: flex;
     justify-content: flex-end;
-    padding: 1rem;
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-header nav ul li {
-    margin-left: 2rem;
+nav ul li {
+    margin-right: 30px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: 500;
 }
 
 .block {
+    height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    padding: 5rem 0;
 }
 
-#home {
-    padding-top: 4rem;
+h1.big-title {
+    font-size: 3em;
+    margin: 0;
 }
 
-h1 {
-    font-size: 3rem;
+p.subtitle {
+    font-size: 1.3em;
+    margin: 20px 0;
 }
 
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.cta-button {
+.btn {
     background-color: #333;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 15px 30px;
     text-decoration: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    border-radius: 5px;
 }
 
-.cta-button:hover {
-    background-color: #555;
+.left-align {
+    text-align: left;
+    max-width: 600px;
 }
 
-.resume-link, .social-icons a {
-    display: inline-block;
-    margin: 1rem;
-    text-decoration: none;
-    color: #333;
+.social-icons a {
+    margin: 0 10px;
 }
 
 .social-icons img {
-    width: 32px;
-    height: 32px;
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Fade transition */
-.block {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.block.visible {
-    opacity: 1;
-    transform: translateY(0);
+    width: 40px;
+    height: 40px;
 }
