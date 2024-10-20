@@ -18,9 +18,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 
-.nav-right {
+nav ul {
     list-style-type: none;
     display: flex;
     gap: 20px;
@@ -28,14 +29,18 @@ nav {
     margin: 0;
 }
 
-.nav-right li a {
+.nav-right {
+    margin-left: auto; /* Move navigation links to the right */
+}
+
+nav ul li a {
     color: #333;
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
 }
 
-.nav-right li a:hover {
+nav ul li a:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
 }
