@@ -9,8 +9,7 @@ body {
 nav ul {
     list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 20px;
     background-color: #f5f5dc;
     margin: 0;
@@ -26,14 +25,20 @@ nav ul li a {
 }
 
 .logo {
-    width: 40px; /* Adjust width to your preference */
-    margin-right: 20px; /* Spacing between logo and menu items */
-    vertical-align: middle; /* Aligns logo with the menu */
+    width: 40px;
+    margin-right: 10px;
 }
 
 .block {
     padding: 100px 20px;
     text-align: center;
+}
+
+.full-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
@@ -75,4 +80,18 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.contact-info {
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 25%;
 }
