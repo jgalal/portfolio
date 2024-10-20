@@ -1,135 +1,69 @@
-/* General Styles */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #FAF4E3; /* Creamy off-white */
     margin: 0;
     padding: 0;
-    color: #333;
+    font-family: 'Your Font Here', sans-serif;
+    background-color: #f5f3e6; /* Off-white background */
 }
 
-a {
+header nav {
+    background-color: #f5f3e6; /* Make this match your desired color */
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    color: inherit;
+    color: black; /* Adjust as needed */
+    font-weight: bold;
 }
 
-/* Header */
-header {
-    background-color: #f5f3ed;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 80px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    color: #333;
-    font-weight: 500;
-}
-
-.nav-links a:hover {
-    color: #000;
-}
-
-/* Main Section */
-.block {
-    padding: 50px 20px;
+h2 {
+    font-size: 1.5em;
     text-align: center;
 }
 
-#home {
-    background-color: #FAF4E3;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.main-title {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    margin: 10px 0 20px;
-    line-height: 1.6;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
+.reach-out {
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #333;
-}
-
-/* Contact Section */
 #contact {
-    background-color: #FAF4E3;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-.content h2 {
-    font-size: 2.2rem;
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.resume-link {
-    color: #333;
-    font-weight: 600;
+.block {
+    margin: 50px 0;
 }
 
-.resume-link:hover {
-    color: #000;
+.social-icons a img {
+    width: 24px; /* Adjust as needed */
+    margin: 0 10px;
 }
 
-.social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Additional Styles */
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links li a {
-    font-size: 1rem;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #000;
-}
-
+/* JavaScript transition effects */
