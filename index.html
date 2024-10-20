@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jalal Galal | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Jalal Galal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <div class="brand">Jalal Galal</div>
-      <nav>
-        <ul>
-          <li><a href="#home-section">Home</a></li>
-          <li><a href="#journey-section">My Journey</a></li>
-          <li><a href="#about-section">About Me</a></li>
-          <li><a href="#portfolio-section">Portfolio</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Jalal Galal</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#journey">My Journey</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <section id="home-section" class="section">
-    <h1>Jalal Galal</h1>
-    <p>Electrical & Computer Engineering Student at UofT | Passionate about Biotechnology</p>
-    <button class="reach-out-btn">Reach Out</button>
-  </section>
+    <section id="home" class="block">
+        <div class="content">
+            <h1>Jalal Galal</h1>
+            <h2>Electrical & Computer Engineering Student at UofT<br>Passionate about Biotechnology</h2>
+            <a href="#contact" class="button">Reach Out</a>
+        </div>
+    </section>
 
-  <section id="contact-section" class="section">
-    <h2>Connect with Me</h2>
-    <div class="contact-container">
-      <p>Jalal Galal</p>
-      <p>Email: j.galal@mail.utoronto.ca</p>
-      <p>Phone: (437) 662 8020</p>
-      <p>Website: <a href="https://jalal.ca">www.jalal.ca</a></p>
-      <a href="resume.pdf" class="resume-link">Find my resume here</a>
-      <div class="social-icons">
-        <a href="https://instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
-        <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="https://linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="block">
+        <div class="content">
+            <h2>Connect with Me</h2>
+            <p>
+                Jalal Galal<br>
+                Email: <a href="mailto:j.galal@mail.utoronto.ca">j.galal@mail.utoronto.ca</a><br>
+                Phone: (437) 662 8020<br>
+                Website: <a href="https://www.jalal.ca">www.jalal.ca</a><br>
+                <a href="resume.pdf" class="resume-link">Find my resume here</a>
+            </p>
+            <div class="social-icons">
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
