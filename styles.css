@@ -21,26 +21,21 @@ nav {
     box-sizing: border-box;
 }
 
-nav ul {
-    list-style-type: none;
+.nav-right {
     display: flex;
     gap: 20px;
     padding: 0;
-    margin: 0;
+    margin: 0 20px 0 0; /* Small left margin added to slightly move it left */
 }
 
-.nav-right {
-    margin-left: auto; /* Move navigation links to the right */
-}
-
-nav ul li a {
+.nav-right li a {
     color: #333;
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+.nav-right li a:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
 }
