@@ -1,32 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Me - Jalal Galal</title>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">Jalal Galal</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="moments.html">Moments That Shaped Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </div>
-    </nav>
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('background.png') center center/cover no-repeat fixed;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
-    <section class="about-section text-center">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>[Professional Headshot Placeholder]</p>
-            <p>Text about your background, passions, and career aspirations...</p>
-        </div>
-    </section>
-</body>
-</html>
+/* Navigation Styling */
+.navbar {
+    background-color: #222;
+    padding: 15px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 20px;
+}
+
+/* Section Styling */
+.home-section, .about-section, .portfolio-section, .moments-section {
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 80vh;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 32px;
+    color: #444;
+    margin-top: 20px;
+}
+
+p, a {
+    font-size: 18px;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth Transitions */
+h1, h2, p, .nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fade-in Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Timeline Styling */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    border-left: 3px solid #333;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.portfolio-section h2, .about-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
