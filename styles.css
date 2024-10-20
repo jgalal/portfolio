@@ -20,28 +20,22 @@ nav {
     align-items: center;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-nav ul {
+.nav-left {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 20px;
     padding: 0;
     margin: 0;
 }
 
-nav ul li a {
+.nav-left li a {
     color: #333;
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+.nav-left li a:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
 }
@@ -51,82 +45,30 @@ nav ul li a:hover {
     transition: transform 0.5s;
 }
 
-.spin {
-    transform: rotate(360deg);
+/* Slide Effect */
+.section-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
-/* Block Sections */
-.block {
+.slide {
     min-height: 100vh;
-    padding: 120px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+    transition: all 0.8s ease-in-out;
+    opacity: 0.3;
+    transform: translateY(30%);
+}
+
+.slide:first-child {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h1 {
     font-size: 54px;
     font-weight: 700;
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-button {
-    padding: 12px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Contact Section */
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-icons img {
-    width: 40px;
-    transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1);
-}
-
-/* General Link Styles */
-a {
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+    margin-bottom:
