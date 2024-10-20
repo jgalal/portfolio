@@ -1,15 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const blocks = document.querySelectorAll('.block');
-
-  const showBlocks = () => {
-      blocks.forEach(block => {
-          const rect = block.getBoundingClientRect();
-          if (rect.top < window.innerHeight) {
-              block.classList.add('visible');
-          }
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
       });
-  };
-
-  window.addEventListener('scroll', showBlocks);
-  showBlocks(); // Initial call
+  });
 });
