@@ -29,30 +29,30 @@ body {
     color: #fff;
 }
 
-/* Home Section */
-.home-section {
+/* Section Styling */
+.home-section, .about-section, .portfolio-section, .moments-section {
     padding: 100px 20px; /* Extra padding for spacing */
     text-align: center;
 }
 
-.home-section h1 {
+h1, h2 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    color: #fff;
+    color: #333;
     transition: opacity 1s ease;
 }
 
-.home-section p {
+p {
     font-size: 18px;
-    color: #fff;
+    color: #444;
 }
 
-/* Smooth transitions */
+/* Smooth Transitions */
 h1, h2, p, .nav-link {
     transition: all 0.3s ease-in-out;
 }
 
-/* Add Fade-in Class */
+/* Fade-in Effect */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -62,4 +62,24 @@ h1, h2, p, .nav-link {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Timeline Styling */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+}
+
+.timeline-item h3 {
+    font-size: 28px;
+    color: #555;
+}
+
+.timeline-item p {
+    font-size: 18px;
+    color: #666;
 }
