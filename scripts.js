@@ -1,10 +1,15 @@
-<script>
-window.addEventListener("scroll", function() {
-    const fadeInSection = document.querySelector("#contact");
-    if (window.scrollY > window.innerHeight / 2) {
-        fadeInSection.classList.add("fade-in-visible");
-    } else {
-        fadeInSection.classList.remove("fade-in-visible");
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const blocks = document.querySelectorAll('.block');
+
+  const showBlocks = () => {
+      blocks.forEach(block => {
+          const rect = block.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+              block.classList.add('visible');
+          }
+      });
+  };
+
+  window.addEventListener('scroll', showBlocks);
+  showBlocks(); // Initial call
 });
-</script>
