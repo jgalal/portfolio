@@ -21,12 +21,3 @@ $(document).ready(function() {
     });
   });
 });
-
-// Navbar transparency change on scroll
-$(window).on('scroll', function() {
-  if ($(window).scrollTop() > 50) {
-    $('.navbar').addClass('navbar-scrolled');
-  } else {
-    $('.navbar').removeClass('navbar-scrolled');
-  }
-});
