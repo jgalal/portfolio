@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5dc;
@@ -6,17 +8,29 @@ body {
     overflow-x: hidden;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    border-bottom: 1px solid #000;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #f5f5dc;
     margin: 0;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin: 0 20px;
+}
+
+nav ul .logo {
+    margin-right: auto;
 }
 
 nav ul li a {
@@ -24,14 +38,23 @@ nav ul li a {
     text-decoration: none;
 }
 
-#logo {
-    width: 50px;
-    margin-right: auto;
-}
-
 .block {
     padding: 100px 20px;
     text-align: center;
+    min-height: 100vh;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 h1 {
@@ -55,6 +78,7 @@ button {
     background-color: black;
     color: white;
     border: none;
+    width: 150px;
 }
 
 button:hover {
@@ -73,13 +97,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-.spin-logo {
-    animation: spin 1s ease-in-out forwards;
 }
