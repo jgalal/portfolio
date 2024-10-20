@@ -1,7 +1,7 @@
 /* Base Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5dc;
+    background-color: #f5f5dc; /* Matching color for the navbar */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -11,7 +11,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #f5f5dc; /* Matching color with the rest of the website */
     padding: 15px 30px;
     border-bottom: 1px solid black;
     z-index: 1000;
@@ -20,7 +20,7 @@ nav {
     align-items: center;
 }
 
-.nav-left {
+.nav-right {
     list-style-type: none;
     display: flex;
     gap: 20px;
@@ -28,14 +28,14 @@ nav {
     margin: 0;
 }
 
-.nav-left li a {
+.nav-right li a {
     color: #333;
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
 }
 
-.nav-left li a:hover {
+.nav-right li a:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
 }
